@@ -1,0 +1,59 @@
+/* Default Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  /* Header Class */
+  .headerclass {
+    background-color: #1f2937;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* Logo Class */
+  .logoclass {
+    color: #f9faf8;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+  }
+    
+  /* Links Class */
+  .linksclass {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* List Class */
+  .listclass {
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+  }  /* List Class */
+  
+  .liclass {
+    display: flex;
+    padding: 20px 20px;
+    text-align: center;
+    list-style-type: none;
+  }
+  
+  .Hero {
+    display: flex;
+    background-color: #3882f6;    
+  }
+
+  .content {
+    display: flex;
+    background-color: #1f2937;
+  }
+
+  .footer {
+    display: flex;
+    background-color: #3882f6;
+  }
