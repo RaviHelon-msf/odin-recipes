@@ -1,9 +1,9 @@
 /* Default Styles */
+  
   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    flex-direction: column;
   }
   /* Header Class */
   .headerclass {
@@ -11,21 +11,30 @@
     padding: 10px 0;
     text-align: center;
     display: flex;
+    height: 30px;
     flex-direction: row;
+    padding-left: 128px;
     justify-content: space-between;
   }
   /* Logo Class */
   .logoclass {
-    color: #f9faf8;
     display: flex;
     justify-content: flex-end;
-    text-align: center;
+    align-items: center;
+    justify-items: baseline;
   }
     
+  .headerlogo {
+    color: #f9faf8;
+    font-size: 18px;
+    text-align: center;
+  }
   /* Links Class */
   .linksclass {
-    text-align: center;
+    align-items: center;
     display: flex;
+    padding-left: 72px;
+    justify-self: right;
     flex-direction: row;
   }
   
@@ -38,11 +47,17 @@
   
   .liclass {
     display: flex;
-    padding: 20px 20px;
+    padding: 0px 20px;
     text-align: center;
     list-style-type: none;
   }
   
+  .secfont {
+    font-size: 18px;
+    color: #e5e7eb;
+    text-decoration: none;
+  }
+
   .Hero {
     display: flex;
     background-color: #3882f6;    
