@@ -13,7 +13,8 @@
     display: flex;
     height: 30px;
     flex-direction: row;
-    padding-left: 128px;
+    padding-left: 15%;
+    padding-right: 15%;
     justify-content: space-between;
   }
   /* Logo Class */
@@ -58,17 +59,73 @@
     text-decoration: none;
   }
 
-  .Hero {
+  .heroContainer {
     display: flex;
-    background-color: #3882f6;    
+    background-color: #1f2937;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding-left: 15%; 
+    padding-right: 15%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .heroText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    gap: 5%;
+  }
+
+  .heroHeader {
+    display: block  ;
+    text-align: center;
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 800;
+    height: 10%;
+    padding: 0%;
+  }
+
+  .heroSub {
+    display: block;
+    height: 30%;
+    text-align: left;
+    align-items: center;
+  }
+
+  .heroSign {
+    display: block;
+    background-color: #3882f6;
+    color: #f9faf8;
+    box-shadow: none;
+    border-radius: 15%;
+    border-width: 0;
+    width: 40%;
+    height: 15%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .heroImg {
+    display: block;
+    min-height: fill;
+    min-width: 50%;
+    align-items: center;
+    justify-content: center;
   }
 
   .content {
     display: flex;
-    background-color: #1f2937;
+    background-color: #3882f6;
   }
 
   .footer {
     display: flex;
-    background-color: #3882f6;
+    background-color: #1f2937;
   }
