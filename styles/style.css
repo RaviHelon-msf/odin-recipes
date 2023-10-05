@@ -18,20 +18,19 @@
     padding-right: 10%;
     justify-content: space-between;
   }
-  /* Logo Class */
+  /* Logo Related Class */
   .logoclass {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     justify-items: baseline;
   }
-    
   .headerlogo {
     color: #f9faf8;
     font-size: 18px;
     text-align: center;
   }
-  /* Links Class */
+  /* Navbar related classes*/
   .linksclass {
     align-items: center;
     display: flex;
@@ -39,14 +38,11 @@
     justify-self: right;
     flex-direction: row;
   }
-  
-  /* List Class */
   .listclass {
     display: flex;
     text-align: center;
     list-style-type: none;
-  }  /* List Class */
-  
+  }
   .liclass {
     display: flex;
     padding: 0px 20px;
@@ -54,6 +50,7 @@
     list-style-type: none;
   }
   
+  /* Font for secondary text info*/
   .secfont {
     font-size: 18px;
     color: #e5e7eb;
@@ -61,6 +58,7 @@
     font-weight: normal;
   }
 
+  /*Hero Content Classes*/
   .heroContainer {
     display: flex;
     background-color: #1f2937;
@@ -75,6 +73,7 @@
     gap: 50px;
   }
 
+  /* Hero Text Related Classes*/
   .heroText {
     display: flex;
     flex-direction: column;
@@ -85,7 +84,6 @@
     gap: 10px;
     padding-top: 0;
   }
-
   .heroHeader {
     display: flex;
     text-align: left;
@@ -98,7 +96,6 @@
     padding-bottom: 0%;
     margin: 0%;
   }
-
   .heroSub {
     display: block;
     height: 30%;
@@ -107,7 +104,6 @@
     padding: 0;
     margin: 0;
   }
-
   .heroSign {
     display: block;
     background-color: #3882f6;
@@ -124,6 +120,7 @@
     font-weight: bolder;
   }
 
+  /* Hero Image Related Classes*/
   .heroImg {
     display: flex;
     min-height: 80%;
@@ -133,7 +130,6 @@
     background-color: gray;
     text-align: center;
   }
-
   .placeholder {
     position: absolute;
     top: 0;
@@ -142,11 +138,17 @@
     display: none;
   }
 
+  /*Content Related Classes*/
   .content {
     display: flex;
-    background-color: #3882f6;
+    background-color: white;
   }
 
+  /*Quotes Related Classes*/
+
+  /*Call to Action Banner Related Classes*/
+  
+  /*Footer Related Classes*/
   .footer {
     display: flex;
     background-color: #1f2937;
