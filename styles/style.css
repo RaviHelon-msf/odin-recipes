@@ -139,10 +139,41 @@
   }
 
   /*Content Related Classes*/
+  
   .content {
-    display: flex;
     background-color: white;
+    border-style: solid;
+    border-color: #1f2937;
+    height: 1000px;
+    width: 100%;
+    padding: 30%;
   }
+  
+  
+  .contentHeader {
+    background-color: white;
+    border-style: solid;
+    border-color: #1f2937;
+    height: 15%;
+    width: 100%;
+    text-align: center;
+  }  
+  
+  .contentScroller {
+    background-color: white;
+    border-style: solid;
+    border-color: #1f2937;
+    height: 75%;
+    width: 100%;
+  }  
+
+
+  .contentLinks {
+    background-color: white;
+    border-style: solid;
+    border-color: #1f2937;
+  }  
+  
 
   /*Quotes Related Classes*/
 
