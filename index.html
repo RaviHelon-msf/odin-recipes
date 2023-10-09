@@ -47,6 +47,53 @@
   </div>  
   <div data-include="content"></div>
 
+  <div id="container">
+    <div id="tester01" class="scroller">
+      <p>Item 1</p>
+      <p>Item 2</p>
+      <p>Item 3</p>
+      <p>Item 4</p>
+      <p>Item 5</p>
+      <p>Item 6</p>
+      <p>Item 7</p>
+      <p>Item 8</p>
+      <p>Item 9</p>
+      <p>Item 10</p>
+      <p>Item 11</p>
+      <!-- Add more items as needed -->
+    </div>
+    <button id="arrowLeft" onclick="scrollContent(-1)">▶</button>
+    <button id="arrowRight" onclick="scrollContent(1)">▶</button>
+  </div>
+
+  <script>
+    var content = document.getElementById("tester01");
+    var arrow = document.getElementById("arrow");
+    const scroller = document.querySelectorAll(".scroller")
+
+    if(!window.matchMedia("(prefered-reduced-motion: reduce)").matches){
+      addAnimation();
+
+    }
+
+    function addAnimation(){
+      scrollers.forEach((scroller) => {
+        scroller.setAtribute("data-animated", true);
+      });
+    }
+
+    function scrollContent(direction) {
+      var scrollAmount = 50; // Adjust this value to control scrolling speed
+      var currentScroll = content.scrollLeft;
+      var newScroll = direction === 1 ? currentScroll + scrollAmount : currentScroll - scrollAmount;
+      content.scrollTo({
+        left: newScroll,
+        behavior: "smooth"
+      });
+    }
+  </script>
+
+
   <div class="footer"></div>
     
 
