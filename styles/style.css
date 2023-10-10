@@ -1,6 +1,7 @@
 /* Default Styles */
   
   body {
+    width: full;
     font-family: HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
     Helvetica, Arial, "Lucida Grande", sans-serif;
     margin: 0;
@@ -142,21 +143,19 @@
   
   .content {
     background-color: white;
-    border-style: solid;
-    border-color: #1f2937;
-    height: 1000px;
-    width: 100%;
-    padding: 30%;
+    height: 400px;
+    padding: 100px 20%;
   }
   
   
   .contentHeader {
-    background-color: white;
-    border-style: solid;
-    border-color: #1f2937;
+    display: flex;
     height: 15%;
-    width: 100%;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: extra-bold;
+    margin: auto;
   }  
   
   .contentScroller {
@@ -164,7 +163,6 @@
     border-style: solid;
     border-color: #1f2937;
     height: 75%;
-    width: 100%;
   }  
 
 
@@ -182,9 +180,10 @@
   }
 
   #tester01 {
-    width: 100%;
+    width: full;
     height: 100%;
-    display: flex;
+    display: flex ;
+    
     overflow: auto;
     border-color: #1f2937;
     border-style: solid;
@@ -195,6 +194,7 @@
     -webkit-mask: linear-gradient(90deg, transparent,white 20%, white 80%, transparent);
     mask: linear-gradient(90deg, transparent,white 20%, white 80%, transparent);
     animation: scroll linear infinite;
+    -webkit-overflow-scrolling: touch;
   }
 
   #tester01 p {
@@ -203,6 +203,9 @@
     padding: 10px;
     border-color: #1f2937;
     border-style: solid;
+    height: 50px;
+    width: 100px;
+    text-align: center;
   }
 
   #arrowLeft {
