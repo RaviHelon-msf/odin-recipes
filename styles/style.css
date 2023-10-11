@@ -143,14 +143,14 @@
   
   .recipes {
     background-color: white;
-    height: 400px;
+    height: 600px;
     padding: 100px 15%;
   }
   
   
   .contentHeader {
     display: flex;
-    height: 15%;
+    height: 100px;
     justify-content: center;
     align-items: center;
     font-size: 36px;
@@ -160,7 +160,7 @@
   
   .contentScroller {
     background-color: white;
-    height: 60%;
+    height: 400px;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -173,16 +173,37 @@
   .contentLinks {
     background-color: inherit;
     min-width: 180px;
-    min-height: 200px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
   }  
 
   .contentLinks a{
-    min-height: 200px;
+    min-height: 350px;
     width: 100%;
-    border-style: dashed;
-    border-color: orange;
+    border-style: solid;
+    border-color: grey;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .contentLinks a:hover{
+    z-index: 1000;
+    border-color: blue;
+  }  
+  
+  .contentLinks a .img:hover{
+    background-image: url(../static/french-omellette-nobg.png) no-repeat center center cover fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: blue;
+  }  
+  
+  .contentLinks a .img{
+    display: none;
   }
 
   .contentLinks p{
