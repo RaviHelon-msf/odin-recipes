@@ -141,10 +141,10 @@
 
   /*Content Related Classes*/
   
-  .content {
+  .recipes {
     background-color: white;
     height: 400px;
-    padding: 100px 20%;
+    padding: 100px 15%;
   }
   
   
@@ -160,17 +160,38 @@
   
   .contentScroller {
     background-color: white;
-    border-style: solid;
-    border-color: #1f2937;
-    height: 75%;
+    height: 60%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+    padding: 20px;
   }  
 
 
   .contentLinks {
-    background-color: white;
-    border-style: solid;
-    border-color: #1f2937;
+    background-color: inherit;
+    min-width: 180px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
   }  
+
+  .contentLinks a{
+    min-height: 200px;
+    width: 100%;
+    border-style: dashed;
+    border-color: orange;
+  }
+
+  .contentLinks p{
+    background-color: inherit;
+    text-align: center;
+    justify-items: center;
+    max-height: 10px;
+
+  }
 
   #container {
     width: 300px;
