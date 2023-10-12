@@ -2,33 +2,33 @@ var doc = window.document,
   context = doc.querySelector('.js-loop'),
   clones = context.querySelectorAll('.is-clone'),
   disableScroll = false,
-  scrollHeight = 0,
+  scrollWidth = 0,
   scrollPos = 0,
-  clonesHeight = 0,
+  clonesWidth = 0,
   i = 0;
 
 function getScrollPos () {
-  return (context.pageYOffset || context.scrollTop) - (context.clientTop || 0);
+  return (context.pageYOffset || context.scrollLeft) - (context.clientLeft || 0);
 }
 
 function setScrollPos (pos) {
-  context.scrollTop = pos;
+  context.scrollLeft = pos;
 }
 
-function getClonesHeight () {
-  clonesHeight = 0;
+function getClonesWidth () {
+  clonesWidth = 0;
 
   for (i = 0; i < clones.length; i += 1) {
-    clonesHeight = clonesHeight + clones[i].offsetHeight;
+    clonesWidth = clonesWidth + clones[i].offsetWidth;
   }
 
-  return clonesHeight;
+  return clonesWidth;
 }
 
 function reCalc () {
   scrollPos = getScrollPos();
-  scrollHeight = context.scrollHeight;
-  clonesHeight = getClonesHeight();
+  scrollWidth = context.scrollWidth;
+  clonesWidth = getClonesWidth();
 
   if (scrollPos <= 0) {
     setScrollPos(1); // Scroll 1 pixel to allow upwards scrolling
@@ -39,13 +39,13 @@ function scrollUpdate () {
   if (!disableScroll) {
     scrollPos = getScrollPos();
 
-    if (clonesHeight + scrollPos >= scrollHeight) {
-      // Scroll to the top when you’ve reached the bottom
+    if (clonesWidth + scrollPos >= scrollWidth) {
+      // Scroll to the Left when you’ve reached the bottom
       setScrollPos(1); // Scroll down 1 pixel to allow upwards scrolling
       disableScroll = true;
     } else if (scrollPos <= 0) {
-      // Scroll to the bottom when you reach the top
-      setScrollPos(scrollHeight - clonesHeight);
+      // Scroll to the bottom when you reach the Left
+      setScrollPos(scrollWidth - clonesWidth);
       disableScroll = true;
     }
   }
@@ -85,20 +85,14 @@ if (document.readyState !== 'loading') {
 
 // Just for this demo: Center the middle block on page load
 window.onload = function () {
-  setScrollPos(Math.round(clones[0].getBoundingClientRect().top + getScrollPos() - (context.offsetHeight - clones[0].offsetHeight) / 2));
+  setScrollPos(Math.round(clones[0].getBoundingClientRect().left + getScrollPos() - (context.offsetWidth - clones[0].offsetWidth) / 2));
 };
 
-
-var content = document.getElementById("tester01");
-var arrow = document.getElementById("arrow");
 const scroller = document.querySelectorAll(".scroller")
 
 function scrollContent(direction) {
-  var scrollAmount = 200; // Adjust this value to control scrolling speed
-  var currentScroll = content.scrollLeft;
+  var scrollAmount = 2000; // Adjust this value to control scrolling speed
+  var currentScroll = scroller.scrollLeft;
   var newScroll = direction === 1 ? currentScroll + scrollAmount : currentScroll - scrollAmount;
-  content.scrollTo({
-    left: newScroll,
-    behavior: "smooth"
-  });
+  setScrollPos(getScrollPos() +  newScroll );
 }
