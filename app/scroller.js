@@ -84,15 +84,18 @@ if (document.readyState !== 'loading') {
 
 
 // Just for this demo: Center the middle block on page load
-window.onload = function () {
-  setScrollPos(Math.round(clones[0].getBoundingClientRect().left + getScrollPos() - (context.offsetWidth - clones[0].offsetWidth) / 2));
-};
+// window.onload = function () {
+//   setScrollPos(Math.round(clones[0].getBoundingClientRect().left + getScrollPos() - (context.offsetWidth - clones[0].offsetWidth) / 2));
+// };
 
 const scroller = document.querySelectorAll(".scroller")
+const divSize = document.querySelector(".contentLinks")
 
 function scrollContent(direction) {
-  var scrollAmount = 2000; // Adjust this value to control scrolling speed
-  var currentScroll = scroller.scrollLeft;
-  var newScroll = direction === 1 ? currentScroll + scrollAmount : currentScroll - scrollAmount;
-  setScrollPos(getScrollPos() +  newScroll );
+  var scrollAmount = 1; // Adjust this value to control scrolling speed
+  // var currentScroll = scroller.scrollLeft;
+  var newScroll = direction*scrollAmount*divSize.offsetWidth;
+  setScrollPos(getScrollPos() +  newScroll + 20);
+  if(getScrollPos() > 5*divSize.offsetWidth)
+    setScrollPos(1)
 }
