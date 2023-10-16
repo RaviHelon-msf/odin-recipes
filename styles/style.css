@@ -167,7 +167,7 @@
     align-items: center;
     overflow: hidden;
     gap: 100px;
-    padding: 20px;
+    margin: 20px;
   }  
 
 
@@ -177,6 +177,7 @@
     min-height: 400px;
     display: flex;
     flex-direction: column;
+    margin: 0%;
   }  
 
   .contentLinks a{
@@ -188,32 +189,34 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
+    position: relative;
+    margin: 0%;
+    padding: auto;
+    transition: border-color 0.3s;
   }
 
   .contentLinks a:hover{
-    z-index: 1000;
     border-color: blue;
   }  
   
-  .contentLinks a .img:hover{
-    background-image: url(../static/french-omellette-nobg.png) no-repeat center center cover fixed;
+
+  .contentLinks a .img{
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    border-color: blue;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  .contentLinks a:hover .img {
+    opacity: 1;
+    z-index: 100;
   }  
   
-  .contentLinks a .img{
-    display: none;
-  }
-
-  .contentLinks p{
-    background-color: inherit;
-    text-align: center;
-    justify-items: center;
-    max-height: 10px;
-  }
-
 
   #arrowLeft {
     left: 15%;
