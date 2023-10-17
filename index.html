@@ -46,25 +46,30 @@
     </div>
   </div>  
 
-  <div class="recipes">
-    <h1 class="contentHeader"> Nossas Receitas Divinas</h1>
-    <div class="js-loop scroller contentScroller">
-      <div data-include="content" class = "contentLinks">1</div>
-      <div data-include="content" class = "contentLinks">2</div>
-      <div data-include="content" class = "contentLinks">3</div>
-      <div data-include="content" class = "contentLinks">4</div>
-      <div data-include="content" class = "is-clone contentLinks">5</div>
-      <div data-include="content" class = "is-clone contentLinks">2</div>
-      <div data-include="content" class = "is-clone contentLinks">3</div>
-    </div>
-    <button id="arrowLeft" onclick="scrollContent(-1)">▶</button>
-    <button id="arrowRight" onclick="scrollContent(1)">▶</button>
-  </div>  
-
+  <main>
+    <div class="recipes">
+      <h1 class="contentHeader"> Nossas Receitas Divinas</h1>
+      <div class="js-loop scroller contentScroller">
+        <div data-include="content" class = "contentLinks">1</div>
+        <div data-include="content" class = "contentLinks">2</div>
+        <div data-include="content" class = "contentLinks">3</div>
+        <div data-include="content" class = "contentLinks">4</div>
+        <div data-include="content" class = "is-clone contentLinks">5</div>
+        <div data-include="content" class = "is-clone contentLinks">2</div>
+        <div data-include="content" class = "is-clone contentLinks">3</div>
+      </div>
+      <button id="arrowLeft" onclick="scrollContent(-1)">▶</button>
+      <button id="arrowRight" onclick="scrollContent(1)">▶</button>
+    </div>  
+  </main>
 
   <div data-include="content" class = "contentLinks"></div>
 
-  <div class="footer"></div>
+  <footer>
+    <p>
+      Copyright &copy;	The Odin Project
+    </p>
+  </footer>
     
 </body>
 

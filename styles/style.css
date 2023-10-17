@@ -290,7 +290,18 @@
   /*Call to Action Banner Related Classes*/
   
   /*Footer Related Classes*/
-  .footer {
+  footer {
     display: flex;
     background-color: #1f2937;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+  }
+
+  footer p{
+    text-align: center;
+    color: #e5e7eb;
+    font-size: small;
+    font-weight: lighter;
   }
