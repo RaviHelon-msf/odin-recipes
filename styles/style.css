@@ -286,6 +286,33 @@
 
 
   /*Quotes Related Classes*/
+  .quote {
+    height: 400px;
+    width: full;
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1f2937;
+    padding: 5% 10%;
+    gap: 20px;
+  }
+
+  .quote blockquote{
+    width: 80%;
+    margin: 0%;
+    overflow: hidden;
+  }
+
+  .quote b{
+    width: 65%;
+    text-align: right;
+    margin: 0%;
+  }
 
   /*Call to Action Banner Related Classes*/
   .callAction {
