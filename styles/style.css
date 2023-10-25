@@ -370,3 +370,53 @@
     font-size: small;
     font-weight: lighter;
   }
+
+
+
+
+
+  /* 
+  
+  Sketch page - *- -*
+  
+  
+  */
+
+  .sketchFs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    padding-top: 40px;
+  }
+  .sketchFs input{
+    width: 30%;
+  }
+
+
+  .sketch {
+    display: grid;
+    position: relative;
+    width: 80%;
+    border: 1px solid #1f2937;
+    margin: 3% 10%;
+  }
+
+  .sketch::before {
+    content: "";
+    padding-top: 100%;
+  }
+
+  .sketch div{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: antiquewhite;
+  }
+
+
+  .sketch div::hover{
+    background-color: gray;
+  }

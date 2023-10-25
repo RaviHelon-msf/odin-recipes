@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Recipes</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
   </head>
   <body>
   
-  <!--#include virtual="components/header.html" -->
-  <script src="../app/Etch-a-Sketch/etch-a-sketch.js"></script>    
+  <!--#include virtual="/components/header.html" -->
+
+  <fieldset class="sketchFs">
+    <label for="inputField">Grid Size:</label>
+    <input type="text" name="inputField" placeholder="16x16">
+  </fieldset>
+  
+  <section class="sketch">
+    
+  </section>
+
+
+  <script src="../app/Etch-a-Sketch/etch-a-sketch.js"></script>
+  
 </body>
 
 </html>
