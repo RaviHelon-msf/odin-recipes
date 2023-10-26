@@ -12,16 +12,19 @@
   <!--#include virtual="/components/header.html" -->
 
   <fieldset class="sketchFs">
-    <label for="inputField">Grid Size:</label>
-    <input type="text" name="inputField" placeholder="16x16">
+    <label for="sketchNumber">Grid Size:</label>
+    <input type="text" placeholder="16x16" id="sketchNumber">
+    <button type="submitButton" id="sketchButton"> submit </button>
   </fieldset>
-  
+  <p id="notice"></p>
+
   <section id="sketch">
     
   </section>
 
 
-  <script src="../app/Etch-a-Sketch/etch-a-sketch.js"></script>
+  <script type="module" src="/app/Etch-a-Sketch/etch-a-sketch.js"></script>
+  <script type="module" src="/app/Etch-a-Sketch/sketch_grid.js"></script>
   
 </body>
 

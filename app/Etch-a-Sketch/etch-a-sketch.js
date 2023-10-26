@@ -1,16 +1,24 @@
-sketch = document.getElementById('sketch')
+import { sketch_grid } from "/app/Etch-a-Sketch/sketch_grid.js";
+
+const input = document.getElementById('sketchNumber')
+const button = document.getElementById('sketchButton')
+const text = document.getElementById('notice')
 
 let number = 16;
 
-sketch.style.display = 'grid';
-sketch.style.gridTemplateColumn = `repeat(${number}, 1fr)`;
-sketch.style.gridTemplateRow = `repeat(${number}, 1fr)`;
+button.addEventListener('click', ()=> {
+    const inputValue = parseFloat(input.value);
 
-for(let i=1;i<=number;i++){
-    for(let j=1;j<=number;j++){
-        const child = document.createElement('div')
-        child.style.gridRow=i
-        child.style.gridColumn=j
-        sketch.appendChild(child)
+    if (isNaN(inputValue) || inputValue>100 || inputValue<16){
+        text.textContent ='Please input a number between 16 and 100';
     }
-}
+    else{
+        number = inputValue
+        text.textContent = ' '
+    }
+
+    sketch_grid(number)
+
+});
+
+sketch_grid(number)
