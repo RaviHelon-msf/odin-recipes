@@ -395,24 +395,19 @@
   }
 
 
-  .sketch {
+  #sketch {
     display: grid;
-    position: relative;
     width: 80%;
     border: 1px solid #1f2937;
     margin: 3% 10%;
+    grid-column: 16;
+    grid-row: 16;
   }
 
-  .sketch::before {
-    content: "";
-    padding-top: 100%;
-  }
-
-  .sketch div{
-    position: absolute;
+  #sketch div{
     padding: 0;
     margin: 0;
-    border: none;
+    border: 1px solid #3882f6;
     background-color: antiquewhite;
   }
 
