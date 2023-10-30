@@ -1,0 +1,24 @@
+#calculator{
+    display: flex;
+    flex-direction: column;
+    width: full;
+    text-align: center;
+    justify-items: center;
+    color: black;
+    padding: 1%;
+    gap: 1%;
+    margin: 0;
+}
+
+#calculator p{
+    color: #ffffff;
+}
+
+#calculator section article{
+    display: flex;
+    background-image: url('/hp12c.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+
+}

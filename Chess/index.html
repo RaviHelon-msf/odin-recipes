@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <title>Chess!</title>
+  <style>
+    /* Add CSS for the chessboard here */
+    main{
+      display: flex;
+      flex-direction: row;
+    }
+    .board {
+      display: grid;
+      grid-template-columns: repeat(8, 50px);
+      grid-template-rows: repeat(8, 50px);
+    }
+    .square {
+      position: relative;
+      display: flex;
+      width: 50px;
+      height: 50px;
+      font-size: 11px;
+      padding: 0;
+    }
+    .square img{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+    }
+    .square #row{
+      position: absolute;
+      bottom:0;
+      right:0;
+      margin: 0;
+    }
+    .square #col{
+      position: absolute;
+      top:0;
+      left:0;
+      margin: 0;
+    }
+    .even {
+      background-color: #eee;
+    }
+    .odd {
+      background-color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1> The Pave Chasers Chess Arena </h1>
+  <main>
+    <div id="board" class="board">
+      
+        
+          <div class="square even">
+            
+              <p id="col">8</p>
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+      
+        
+          <div class="square odd">
+            
+              <p id="col">7</p>
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+      
+        
+          <div class="square even">
+            
+              <p id="col">6</p>
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+      
+        
+          <div class="square odd">
+            
+              <p id="col">5</p>
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+      
+        
+          <div class="square even">
+            
+              <p id="col">4</p>
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+      
+        
+          <div class="square odd">
+            
+              <p id="col">3</p>
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+            <img src='https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt45.svg' alt='ops'/>
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+      
+        
+          <div class="square even">
+            
+              <p id="col">2</p>
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+            
+          </div>
+        
+      
+        
+          <div class="square odd">
+            
+              <p id="col">1</p>
+            
+            
+              <p id="row">a</p>
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+              <p id="row">b</p>
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+              <p id="row">c</p>
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+              <p id="row">d</p>
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+              <p id="row">e</p>
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+              <p id="row">f</p>
+            
+            
+          </div>
+        
+          <div class="square odd">
+            
+            
+              <p id="row">g</p>
+            
+            
+          </div>
+        
+          <div class="square even">
+            
+            
+              <p id="row">h</p>
+            
+            
+          </div>
+        
+      
+    </div>
+    <div id="history">
+      <!-- Your chess move history can be displayed here -->
+      <ul>
+        <li>1. e4</li>
+        <li>1... e5</li>
+        <!-- Add more moves as needed -->
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
