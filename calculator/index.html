@@ -15,11 +15,23 @@
   <main id="calculator">
     <h1>The odin powered calculator!!</h1>
     <h3>Only those gifted shall be able to use it.</h3>
-    <p> Envious people might say it is only a cheap copy of the hp 12c, which could not be futher from the true!</p>
+    <p> Envious people might say it is only a cheap copy of the hp 12c, which could not be further from the true!</p>
 
     <section>
-      <article></article>
-      <aside></aside>
+      <article>
+        <img src="/media/hp12c.png" alt="hp12c" usemap="#workmap" width="600" height="370">
+
+        <map name="workmap">
+          <area shape="rect" coords="34,44,270,350" alt="Computer" onclick="history.push(1)">
+          <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+          <area shape="rect" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+        </map>
+      </article>
+      <aside>
+        <h2> History </h2>
+        <ul  id ="history">
+        </ul>
+      </aside>
     </section>
     
   </main>
@@ -32,10 +44,8 @@
     
 </body>
 
-<script src="app/rps.js"></script>
+<script src="/app/hp12c/calculator.js"></script>
 
-<script src="app/jquery.js"></script>
-<script src="app/includeHTML.js"></script>
-<script src="app/scroller.js"></script>
+<script src="/app/jquery.js"></script>
 
 </html>
