@@ -20,13 +20,53 @@ function display() {
 function history_update () {
     history.shift()
     history.push(current_number)
-    current_number = 0
     display()
+    current_number = 0
 }
 
 function current_number_update (num) {
     current_number = current_number*10 + num
     display()
+}
+
+function division(){
+    number_1 = history.pop()
+    number_2 = history.pop()
+    history.unshift(0)
+    history.unshift(0)
+
+    current_number = number_1 / number_2
+    history_update()
+}
+
+function multiplication(){
+    number_1 = history.pop()
+    number_2 = history.pop()
+    history.unshift(0)
+    history.unshift(0)
+
+    current_number = number_1 * number_2
+    history_update()
+}
+
+function addition(){
+    number_1 = history.pop()
+    number_2 = history.pop()
+    history.unshift(0)
+    history.unshift(0)
+
+    current_number = number_1 + number_2
+    history_update()
+}
+
+function subtraction(){
+    number_1 = history.pop()
+    number_2 = history.pop()
+    history.unshift(0)
+    history.unshift(0)
+
+    current_number = number_1 - number_2
+    history_update()
 }
 
 display()

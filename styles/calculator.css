@@ -53,15 +53,6 @@
     font-weight: 300;
 }
 
-#calculator section article div{
-    position: absolute;
-    inset: 245px 345px;
-    width: 40px;
-    height: 90px;
-    border: 2px solid red;
-}
-
-
 #calculator section aside{
     height: 370px;
     width: 100px;
