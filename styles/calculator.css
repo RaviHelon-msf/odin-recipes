@@ -39,11 +39,25 @@
     box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
 }
 
+
+#calculator section article #display{
+    position: absolute;
+    inset: 27px 105px;
+    width: 245px;
+    height: 35px;
+    text-align: left;
+    padding-left: 35px;
+    padding-top: 15px;
+    border: none;
+    font-size: larger;
+    font-weight: 300;
+}
+
 #calculator section article div{
     position: absolute;
-    inset: 245px 400px;
+    inset: 245px 345px;
     width: 40px;
-    height: 30px;
+    height: 90px;
     border: 2px solid red;
 }
 
